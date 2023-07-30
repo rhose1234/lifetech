@@ -9,7 +9,7 @@
 }
 .navbar {
   background-color:#FCE0DD;
-  height: 12vh;
+  height: 14vh;
   
 }
 
@@ -71,6 +71,7 @@ span .navbar-toggler-icon {
   font-size: 18px;
   line-height: 24px;
   color: #000000 !important;
+  font-weight: 600 !important;
 }
 .nav-link:hover {
   color: #F98868 !important ;
@@ -83,6 +84,19 @@ span .navbar-toggler-icon {
   justify-content: center;
   width: 200px !important;
   border-radius: 15px;
+}
+.dropdown-menu.show{
+  background-color: #FCE0DD;
+  color: #000000 !important;
+  border-radius: 0px;
+  border-style: none;
+
+}
+.dropdown-item{
+  font-weight: 600 !important ;
+}
+.dropdown-item:hover {
+  color: #F98868 !important ;
 }
 
     </style>
@@ -121,10 +135,20 @@ span .navbar-toggler-icon {
 
             
             <div class="offcanvas-body">
-                <div class="navbar-nav justify-content-end flex-grow-1">
-                    <a class="nav-item pt-4 pt-lg-0 nav-link active" aria-current="page" href="#Home" >Home</a>
-                    <a class="nav-item pt-4 pt-lg-0 nav-link" href="#About">About</a>
-                    <a class="nav-item pt-4 pt-lg-0 nav-link" href="Courses">Courses</a>
+                <div class="navbar-nav justify-content-end flex-grow-1 ">
+                    <a class="nav-item pt-4 mt-3 pt-lg-0 nav-link active" aria-current="page" href="#Home" >Home</a>
+                    <a class="nav-item pt-4 mt-3 pt-lg-0 nav-link" href="#About">About</a>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle pt-4 mt-3 pt-lg-0 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Courses</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#">Html</a></li>
+                        <li><a class="dropdown-item " href="#">Css</a></li>
+                        <li><a class="dropdown-item " href="#">Javascript</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Seo Optimiztion</a></li>
+                      </ul>
+                    </li>
                     <a class="nav-item pt-4 pt-lg-0 nav-link create" href="#create">Create an account</a>
                 </div>
             </div>
