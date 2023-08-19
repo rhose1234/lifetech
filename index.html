@@ -1,234 +1,353 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .navbar-brand img{
-  width: 8rem !important;
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+.navbar-brand {
+color: #FE715A !important;
+font-size: 1.2rem !important;
+}
+.navbar-brand span {
+color: #50262D !important;
 }
 .navbar {
-  background-color:#FCE0DD;
-  height: 14vh;
-  
+background-color:#FCE0DD;
+height: 14vh;
 }
-
 .offcanvas {
-  background-color: #FCE0DD;
-  border-radius: 0px 0px 100px 0px;
-  
+background-color: #FCE0DD;
+border-radius: 0px 0px 100px 0px;
 }
 span .navbar-toggler-icon {
-  background-color: #50262D !important;
+background-color: #50262D !important;
 }
 .navbar-toggler {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  transition: 0.5s ease-in-out;
+width: 20px;
+height: 20px;
+position: relative;
+transition: 0.5s ease-in-out;
 }
-
 .toggler-icon {
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  display: block;
-  position: absolute;
-  border-radius: 1px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
-  border-radius: 10px;
-  margin-right: 100px !important;
+width: 100%;
+height: 2px;
+background-color: #000000;
+display: block;
+position: absolute;
+border-radius: 1px;
+opacity: 1;
+left: 0;
+transform: rotate(0deg);
+transition: 0.25s ease-in-out;
+border-radius: 10px;
+margin-right: 100px !important;
 }
-
 /*when navigation is clicked*/
 .navbar-toggler .top-bar {
-  margin-top: 7px;
-  transform: rotate(0deg);
+margin-top: 7px;
+transform: rotate(0deg);
 }
 .navbar-toggler .middle-bar {
-  margin-top: 13.5px;
-  transform: rotate(0deg);
+margin-top: 13.5px;
+transform: rotate(0deg);
 }
 .navbar-toggler .bottom-bar {
-  margin-top: 0px;
-  transform: rotate(0deg);
+margin-top: 0px;
+transform: rotate(0deg);
 }
 /*state when navbar is collapsed*/
 .offcanvas-header .close {
-  color: #000000 !important;
-  font-size: 25px;
+color: #000000 !important;
+font-size: 25px;
 }
 .nav-item {
-  margin-left: 15px !important;
+margin-left: 15px !important;
 }
 .nav-link {
-  padding: 10px !important;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000 !important;
-  font-weight: 600 !important;
+padding: 10px !important;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #000000 !important;
+font-weight: 600 !important;
 }
 .nav-link:hover {
-  color: #F98868 !important ;
+color: #F98868 !important ;
 }
 .nav-link.create{
-  border: 2px solid #F98868 !important;
-  height: 50px;
-  padding: 10px !important;
-  text-align: center;
-  justify-content: center;
-  width: 200px !important;
-  border-radius: 15px;
+border: 2px solid #F98868 !important;
+height: 50px;
+padding: 10px !important;
+text-align: center;
+justify-content: center;
+width: 200px !important;
+border-radius: 15px;
 }
 .dropdown-menu.show{
-  background-color: #FCE0DD;
-  color: #000000 !important;
-  border-radius: 0px;
-  border-style: none;
-
+background-color: #FCE0DD;
+color: #000000 !important;
+border-radius: 0px;
+border-style: none;
 }
 .dropdown-item{
-  font-weight: 600 !important ;
+font-weight: 600 !important ;
 }
 .dropdown-item:hover {
-  color: #F98868 !important ;
-
+color: #F98868 !important ;
 }
 .accordion-button{
-  background-color: #FCE0DD !important;
-  color: #000000;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- 
+background-color: #FCE0DD !important;
+color: #000000;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .accordion-button::after{
-  color: #50262D !important;
+color: #50262D !important;
 font-weight: 80px !important;
 }
 .accordion-button::before{
-  color: #50262D !important;
+color: #50262D !important;
 font-weight: 80px !important;
 }
 .accordion-item{
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
 }
-
-    </style>
-    <title>lifetech project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-
-  <body>
-   
-
-    
-
+#courses h2 {
+color: #50262D;
+}
+#courses h2 span{
+color:#FE715A ;
+}
+.card {
+align-items: center;
+justify-content: center;
+padding: 10px 25px;
+box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+border-radius: 17px ;
+width:100% !important;
+}
+.card i{
+font-size: 80px !important;
+color: #FE715A !important;
+margin-bottom: 20px !important;
+}
+.card .bi.bi-arrow-up-circle-fill {
+position: absolute;
+bottom: -50px;
+background-color: #FE715A;
+height: 50px;
+width: 50px;
+display: flex;
+align-items: center !important;
+justify-content: center !important;
+border-radius: 50%;
+color: #50262D !important;
+opacity: 0;
+transform: translateY(50%);
+transition: all 0.5s ease;
+}
+.card:hover .bi.bi-arrow-up-circle-fill {
+bottom: 0px;
+opacity: 1;
+}
+.cta {
+display: flex;
+padding: 20px;
+text-decoration: none;
+font-size: 40px;
+color: #ffffff !important;
+background: #fe715a;
+transition: 1s;
+box-shadow: 6px 6px 0 black;
+transform: skewX(-15deg);
+}
+.cta:focus {
+outline: none;
+}
+.cta:hover {
+transition: 0.5s;
+box-shadow: 10px 10px #50262D ;
+}
+.cta span:nth-child(2) {
+transition: 0.5s;
+margin-right: 0px;
+}
+.cta:hover span:nth-child(2) {
+transition: 0.5s;
+margin-right: 45px;
+}
+span {
+transform: skewX(15deg)
+}
+span:nth-child(2) {
+width: 20px;
+margin-left: 30px;
+position: relative;
+top: 12%;
+}
+/**************SVG****************/
+path.one {
+transition: 0.4s;
+transform: translateX(-60%);
+}
+path.two {
+transition: 0.5s;
+transform: translateX(-30%);
+}
+.cta:hover path.three {
+animation: color_anim 1s infinite 0.2s;
+}
+.cta:hover path.one {
+transform: translateX(0%);
+animation: color_anim 1s infinite 0.6s;
+}
+.cta:hover path.two {
+transform: translateX(0%);
+animation: color_anim 1s infinite 0.4s;
+}
+/* SVG animations */
+@keyframes color_anim {
+0% {
+fill: white;
+}
+50% {
+fill:#50262D;
+}
+100% {
+fill: white;
+}
+}
+</style>
+<title>lifetech project</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
 <body>
-  <!------navigation start------>
-
-  <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
-    <div class="container">
-
-        <a href="#" class="navbar-brand fw-bold"><img src="images/logo.png" alt="learnwithrose" /></a>
-
-        <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-        </a>
-
-        <div class="offcanvas offcanvas-start" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel" >
-
-            <div class="pt-3 offcanvas-header">
-                <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">
-                    <a href="#" class="navbar-brand fw-bold"> <img src="images/logo.png" class="px-2" alt=""/> </a>
-                </h5>
-                <i class="bi bi-x-circle close" data-bs-dismiss="offcanvas"  aria-label="Close"></i>
-            </div>
-            
-
-            
-            <div class="offcanvas-body">
-                <div class="navbar-nav justify-content-end flex-grow-1 ">
-                    <a class="nav-item pt-4 mt-3 pt-lg-0 nav-link active" aria-current="page" href="#Home" >Home</a>
-                    <a class="nav-item pt-4 mt-3 pt-lg-0 nav-link" href="#About">About</a>
-
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle pt-4 mt-3 pt-lg-0 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Courses</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="#">Html</a></li>
-                        <li><a class="dropdown-item " href="#">Css</a></li>
-                        <li><a class="dropdown-item " href="#">Javascript</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Seo Optimiztion</a></li>
-                      </ul>
-                    </li>
-                    <a class="nav-item pt-4 pt-lg-0 nav-link create" href="#create">Create an account</a>
-                </div>
-            </div>
-
-          </div>
-    </div>
-  </nav>
-
-
-  <section class="faq-accordion container mt-5 pt-5">
-    <h1 class="fw-bold mt-5  pb-5 text-center">Frequently Asked Questions?</h1>
-
-
-    <div class="accordion">
-
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <h4 class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    What is Learnwithrose
-                </h4>
-            </h2>
-
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <p>Learnwithrose is a platform for newbies getting ready to get into tech and to kickstart their career in tech.👨‍💻
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit mollitia similique fugit qui necessitatibus, doloribus nihil alias error, quo laborum quia facere labore totam maxime soluta nemo sunt enim repellat.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <h4 class="fw-bold accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Is the platform free for learning?
-                </h4>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <p>YES! the platform is free.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <h4 class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    How can i Enrol for a course?
-                </h4>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <p>You can get started by creating an account with learnwithrose, then proceed to the courses section pick a course then get started
-                        May the forces be with you ⚒.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+<div class="container">
+<a href="#" class="navbar-brand fw-bold">Learn<span>With</span>Rose</a>
+<a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+<span class="toggler-icon top-bar"></span>
+<span class="toggler-icon middle-bar"></span>
+<span class="toggler-icon bottom-bar"></span>
+</a>
+<div class="offcanvas offcanvas-start" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+<div class="pt-3 offcanvas-header">
+<h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">
+<a href="#" class="navbar-brand fw-bold">Learn<span>With</span>Rose</a>
+</h5>
+<i class="bi bi-x-circle close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+</div>
+<div class="offcanvas-body">
+<div class="navbar-nav justify-content-end flex-grow-1">
+<a class="nav-item pt-4 mt-3 pt-lg-0 nav-link active" aria-current="page" href="#Home" >Home</a>
+<a class="nav-item pt-4 mt-3 pt-lg-0 nav-link" href="#About">About</a>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle pt-4 mt-3 pt-lg-0 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Courses</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item " href="#">Html</a></li>
+<li><a class="dropdown-item " href="#">Css</a></li>
+<li><a class="dropdown-item " href="#">Javascript</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Seo Optimiztion</a></li>
+</ul>
+</li>
+<a class="nav-item pt-4 pt-lg-0 nav-link create" href="#create">Create an account</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<section class="faq-accordion container mt-5 pt-5">
+<h1 class="fw-bold mt-5  pb-5 text-center">Frequently Asked Questions?</h1>
+<div class="accordion">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<h4 class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+What is Learnwithrose
+</h4>
+</h2>
+<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+<div class="accordion-body">
+<p>Learnwithrose is a platform for newbies getting ready to get into tech and to kickstart their career in tech.👨‍💻
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit mollitia similique fugit qui necessitatibus, doloribus nihil alias error, quo laborum quia facere labore totam maxime soluta nemo sunt enim repellat.
+</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<h4 class="fw-bold accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+Is the platform free for learning?
+</h4>
+</h2>
+<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body">
+<p>YES! the platform is free.</p>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<h4 class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+How can i Enrol for a course?
+</h4>
+</h2>
+<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body">
+<p>You can get started by creating an account with learnwithrose, then proceed to the courses section pick a course then get started
+May the forces be with you ⚒.
+</p>
+</div>
+</div>
+</div>
 </div>
 </section>
-
-
+<section class="courses mt-5 pt-5" id="courses">
+<div class="container">
+<div class="row gx-5 mx-auto">
+<h2 class="text-center mb-5 pb-3 display-5 fw-bold">Get <span>started</span> with our courses</h2>
+<div class="col-lg-4 col-md-12 mt-5 pt-3 ">
+<div class="card p-5" style="width: 18rem;">
+<i class="bi bi-filetype-html"></i>
+<p class="pt-3 text-start">
+HTML consists of a series of elements that define the structure and content of a web page. These elements are represented by tags, enclosed in angle brackets (< >)<div class=""></div>
+</p>
+<span class="bi bi-arrow-up-circle-fill fw-bold text-center"></span>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 mt-5 pt-3 ">
+<div class="card p-5" style="width: 18rem;">
+<i class="bi bi-filetype-css"></i>
+<p class="pt-3 text-start">
+CSS styles visually enhance web pages by applying properties to HTML elements. These properties determine attributes like color, font, layout, and more.</p>
+<span class="bi bi-arrow-up-circle-fill fw-bold text-center"></span>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 mt-5 pt-3 ">
+<div class="card p-5" style="width: 18rem;">
+<i class="bi bi-filetype-js"></i>
+<p class="pt-3 text-start">JavaScript brings interactivity to a webpage, such as interaction, element manipulation, input validation, event handling, API requests, and more.</p>
+<span class="bi bi-arrow-up-circle-fill fw-bold text-center"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="container justify-content-center align-items-center text-center d-flex mt-5 pt-5">
+<a class="cta h-25 mt-5 " href="#">
+<span class="fw-bold">View more</span>
+<span>
+<svg width="50px" height="30px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.67709797,42.8607841 C24.48259567,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+</g>
+</svg>
+</span>
+</a>
+</div>
 </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
 </html>
